@@ -1,5 +1,14 @@
 # Amux
 
+Amux is a 64-bit OS kernel project aiming for high performance and deterministic control, written in C++.
+
+Amux-OS function and suit all users activities such as 
+
+- Development
+- Video Editing
+- Browsing
+- Gaming
+- ...any other normal os usage
 
 ---
 
@@ -10,19 +19,11 @@
 - Mode: Long mode (64-bit)
 - Kernel Type: Monolithic Modular
 - Language: C++ (freestanding) + minimal C + Assembly
-- No microkernel architecture
-- No userspace drivers
-- No hybrid model
 
 **Primary objective:** Performance and deterministic control over hardware.  
 **Security:** Secondary to speed in early stages.
 
-All major subsystems live in kernel space:
-- Scheduler
-- Memory Manager
-- VFS
-- Drivers
-- Network stack
+
 
 ---
 
@@ -82,13 +83,14 @@ Amux/
 │   │   ├── Calculator/
 │   │   └── SnakeGame/
 │   └── tools/
+├── build/
 └── tools/
 
 ```
 
 ---
 
-## OverLook
+## OverView
 
 ```
 [Physical Machine / Firmware]
@@ -147,5 +149,57 @@ Amux/
 
 ---
 
+## Build System Architecture – Official Policy
+
+Amux OS uses **CMake** as the official build orchestrator.
+
+**CMake is used strictly as:**
+- Target manager
+- Dependency resolver
+- Multi-directory coordinator
+
+**CMake must NOT:**
+- Control architecture decisions
+- Override linker script behavior
+- Inject host system libraries
+- Enable hosted compilation mode
+
+---
+
+## Cross Compilation Rules
+
+- Pan OS must always be built using a **cross compiler**
+- **Target:** x86_64-elf
+- Host compiler usage is strictly forbidden
+- All builds must be freestanding
+
+---
+
+## Required Toolchain
+
+- x86_64-elf-gcc
+- x86_64-elf-g++
+- nasm
+- ld (cross)
+- cmake
+- qemu-system-x86_64
+- **Bootloader:** GRUB (Multiboot2)
+
+---
+
+## Building commands
+
+```
+mkdir build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchain-x86_64-elf.cmake ..
+make // to generate Amux
+```
+
+---
+
 ## Moto
+
 Amux Creativity Fuse With Introvert
+
+---
