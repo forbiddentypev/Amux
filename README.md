@@ -34,57 +34,56 @@ Amux/
 ├── kernel/
 │   ├── arch/
 │   │   ├── x86_64/
-│   │   │   ├── boot/
-│   │   │   ├── cpu/
-│   │   │   ├── interrupts/
-│   │   │   ├── paging/
-│   │   │   └── apic/
-│   │   └── arm64/
+│   │   │   ├── boot/          # ASM (bootloader, CPU entry)
+│   │   │   ├── cpu/           # C/C++ mix (CPU features classes + low-level ops)
+│   │   │   ├── interrupts/    # C/C++ mix (handlers objects + low-level trap)
+│   │   │   ├── paging/        # C (memory management, page tables)
+│   │   │   └── apic/          # C (APIC/interrupt control)
+│   │   └── arm64/             # same as x86_64 (for future expansion)
 │   │
 │   ├── core/
-│   │   ├── init/
-│   │   ├── scheduler/
-│   │   ├── memory/
-│   │   ├── process/
-│   │   └── syscall/
+│   │   ├── init/              # C++ (RAII, kernel init classes)
+│   │   ├── scheduler/         # C++ (process/thread classes)
+│   │   ├── memory/            # C (allocators, physical memory)
+│   │   ├── process/           # C++ (Process class & management)
+│   │   └── syscall/           # C (syscall interface)
 │   │
 │   ├── drivers/
-│   │   ├── block/
-│   │   ├── char/
-│   │   ├── net/
-│   │   ├── gpu/
-│   │   └── input/
+│   │   ├── block/             # C++ (driver class) + C (hardware I/O)
+│   │   ├── char/              # C++ + C mix
+│   │   ├── net/               # C++ (network classes) + C (low-level)
+│   │   ├── gpu/               # C++ + C mix
+│   │   └── input/             # C++ + C mix
 │   │
 │   ├── fs/
-│   │   ├── vfs/
-│   │   ├── ext2/
-│   │   └── tmpfs/
+│   │   ├── vfs/               # C++ (virtual FS abstraction)
+│   │   ├── ext2/              # C (disk structures, low-level FS)
+│   │   └── tmpfs/             # C (in-memory FS)
 │   │
 │   ├── network/
-│   │   ├── stack/
-│   │   ├── tcp/
-│   │   └── udp/
+│   │   ├── stack/             # C++ (protocol classes)
+│   │   ├── tcp/               # C++ (TCP handling)
+│   │   └── udp/               # C++ (UDP handling)
 │   │
 │   ├── lib/
-│   │   ├── string/
-│   │   ├── math/
-│   │   └── containers/
+│   │   ├── string/            # C++ (templates/classes)
+│   │   ├── math/              # C++ (math utilities)
+│   │   └── containers/        # C++ (containers, vectors, lists)
 │   │
 │   ├── include/
-│   │   ├── pan/
-│   │   └── arch/
+│   │   ├── pan/               # C/C++ headers
+│   │   └── arch/              # C/C++ headers
 │   │
 │   └── init/
-│       └── kmain.cpp
+│       └── kmain.cpp          # C++ (kernel entry point)
 │
 ├── user/
-│   ├── ui/
+│   ├── ui/                    # C++ (GUI, widgets, event handling)
 │   ├── apps/
-│   │   ├── Calculator/
-│   │   └── SnakeGame/
-│   └── tools/
-├── build/
-└── tools/
+│   │   ├── Calculator/        # C++ (application logic)
+│   │   └── SnakeGame/         # C++ (game logic)
+│   └── tools/                 # C++ (CLI tools)
+└── tools/                      # C++ (build tools, helpers)
 
 ```
 
