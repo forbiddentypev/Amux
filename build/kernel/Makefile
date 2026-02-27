@@ -160,6 +160,158 @@ arch/x86_64/boot/multiboot.S.obj:
 	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/boot/multiboot.S.obj
 .PHONY : arch/x86_64/boot/multiboot.S.obj
 
+arch/x86_64/interrupts/entry.obj: arch/x86_64/interrupts/entry.S.obj
+.PHONY : arch/x86_64/interrupts/entry.obj
+
+# target to build an object file
+arch/x86_64/interrupts/entry.S.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj
+.PHONY : arch/x86_64/interrupts/entry.S.obj
+
+arch/x86_64/interrupts/interrupts.obj: arch/x86_64/interrupts/interrupts.cpp.obj
+.PHONY : arch/x86_64/interrupts/interrupts.obj
+
+# target to build an object file
+arch/x86_64/interrupts/interrupts.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj
+.PHONY : arch/x86_64/interrupts/interrupts.cpp.obj
+
+arch/x86_64/interrupts/interrupts.i: arch/x86_64/interrupts/interrupts.cpp.i
+.PHONY : arch/x86_64/interrupts/interrupts.i
+
+# target to preprocess a source file
+arch/x86_64/interrupts/interrupts.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.i
+.PHONY : arch/x86_64/interrupts/interrupts.cpp.i
+
+arch/x86_64/interrupts/interrupts.s: arch/x86_64/interrupts/interrupts.cpp.s
+.PHONY : arch/x86_64/interrupts/interrupts.s
+
+# target to generate assembly for a file
+arch/x86_64/interrupts/interrupts.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.s
+.PHONY : arch/x86_64/interrupts/interrupts.cpp.s
+
+arch/x86_64/paging/paging.obj: arch/x86_64/paging/paging.cpp.obj
+.PHONY : arch/x86_64/paging/paging.obj
+
+# target to build an object file
+arch/x86_64/paging/paging.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj
+.PHONY : arch/x86_64/paging/paging.cpp.obj
+
+arch/x86_64/paging/paging.i: arch/x86_64/paging/paging.cpp.i
+.PHONY : arch/x86_64/paging/paging.i
+
+# target to preprocess a source file
+arch/x86_64/paging/paging.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.i
+.PHONY : arch/x86_64/paging/paging.cpp.i
+
+arch/x86_64/paging/paging.s: arch/x86_64/paging/paging.cpp.s
+.PHONY : arch/x86_64/paging/paging.s
+
+# target to generate assembly for a file
+arch/x86_64/paging/paging.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.s
+.PHONY : arch/x86_64/paging/paging.cpp.s
+
+core/memory/physical.obj: core/memory/physical.cpp.obj
+.PHONY : core/memory/physical.obj
+
+# target to build an object file
+core/memory/physical.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj
+.PHONY : core/memory/physical.cpp.obj
+
+core/memory/physical.i: core/memory/physical.cpp.i
+.PHONY : core/memory/physical.i
+
+# target to preprocess a source file
+core/memory/physical.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.i
+.PHONY : core/memory/physical.cpp.i
+
+core/memory/physical.s: core/memory/physical.cpp.s
+.PHONY : core/memory/physical.s
+
+# target to generate assembly for a file
+core/memory/physical.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.s
+.PHONY : core/memory/physical.cpp.s
+
+core/scheduler/scheduler.obj: core/scheduler/scheduler.cpp.obj
+.PHONY : core/scheduler/scheduler.obj
+
+# target to build an object file
+core/scheduler/scheduler.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj
+.PHONY : core/scheduler/scheduler.cpp.obj
+
+core/scheduler/scheduler.i: core/scheduler/scheduler.cpp.i
+.PHONY : core/scheduler/scheduler.i
+
+# target to preprocess a source file
+core/scheduler/scheduler.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.i
+.PHONY : core/scheduler/scheduler.cpp.i
+
+core/scheduler/scheduler.s: core/scheduler/scheduler.cpp.s
+.PHONY : core/scheduler/scheduler.s
+
+# target to generate assembly for a file
+core/scheduler/scheduler.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.s
+.PHONY : core/scheduler/scheduler.cpp.s
+
+drivers/driver_manager.obj: drivers/driver_manager.cpp.obj
+.PHONY : drivers/driver_manager.obj
+
+# target to build an object file
+drivers/driver_manager.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj
+.PHONY : drivers/driver_manager.cpp.obj
+
+drivers/driver_manager.i: drivers/driver_manager.cpp.i
+.PHONY : drivers/driver_manager.i
+
+# target to preprocess a source file
+drivers/driver_manager.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.i
+.PHONY : drivers/driver_manager.cpp.i
+
+drivers/driver_manager.s: drivers/driver_manager.cpp.s
+.PHONY : drivers/driver_manager.s
+
+# target to generate assembly for a file
+drivers/driver_manager.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.s
+.PHONY : drivers/driver_manager.cpp.s
+
+drivers/timer/pit_driver.obj: drivers/timer/pit_driver.cpp.obj
+.PHONY : drivers/timer/pit_driver.obj
+
+# target to build an object file
+drivers/timer/pit_driver.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj
+.PHONY : drivers/timer/pit_driver.cpp.obj
+
+drivers/timer/pit_driver.i: drivers/timer/pit_driver.cpp.i
+.PHONY : drivers/timer/pit_driver.i
+
+# target to preprocess a source file
+drivers/timer/pit_driver.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.i
+.PHONY : drivers/timer/pit_driver.cpp.i
+
+drivers/timer/pit_driver.s: drivers/timer/pit_driver.cpp.s
+.PHONY : drivers/timer/pit_driver.s
+
+# target to generate assembly for a file
+drivers/timer/pit_driver.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.s
+.PHONY : drivers/timer/pit_driver.cpp.s
+
 init/kmain.obj: init/kmain.cpp.obj
 .PHONY : init/kmain.obj
 
@@ -184,6 +336,30 @@ init/kmain.cpp.s:
 	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/init/kmain.cpp.s
 .PHONY : init/kmain.cpp.s
 
+lib/new_delete.obj: lib/new_delete.cpp.obj
+.PHONY : lib/new_delete.obj
+
+# target to build an object file
+lib/new_delete.cpp.obj:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj
+.PHONY : lib/new_delete.cpp.obj
+
+lib/new_delete.i: lib/new_delete.cpp.i
+.PHONY : lib/new_delete.i
+
+# target to preprocess a source file
+lib/new_delete.cpp.i:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.i
+.PHONY : lib/new_delete.cpp.i
+
+lib/new_delete.s: lib/new_delete.cpp.s
+.PHONY : lib/new_delete.s
+
+# target to generate assembly for a file
+lib/new_delete.cpp.s:
+	cd /home/forbiddentypev/Dev/OS/Amux/build && $(MAKE) $(MAKESILENT) -f kernel/CMakeFiles/amux-kernel.dir/build.make kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.s
+.PHONY : lib/new_delete.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -196,9 +372,31 @@ help:
 	@echo "... amux-kernel"
 	@echo "... arch/x86_64/boot/entry.obj"
 	@echo "... arch/x86_64/boot/multiboot.obj"
+	@echo "... arch/x86_64/interrupts/entry.obj"
+	@echo "... arch/x86_64/interrupts/interrupts.obj"
+	@echo "... arch/x86_64/interrupts/interrupts.i"
+	@echo "... arch/x86_64/interrupts/interrupts.s"
+	@echo "... arch/x86_64/paging/paging.obj"
+	@echo "... arch/x86_64/paging/paging.i"
+	@echo "... arch/x86_64/paging/paging.s"
+	@echo "... core/memory/physical.obj"
+	@echo "... core/memory/physical.i"
+	@echo "... core/memory/physical.s"
+	@echo "... core/scheduler/scheduler.obj"
+	@echo "... core/scheduler/scheduler.i"
+	@echo "... core/scheduler/scheduler.s"
+	@echo "... drivers/driver_manager.obj"
+	@echo "... drivers/driver_manager.i"
+	@echo "... drivers/driver_manager.s"
+	@echo "... drivers/timer/pit_driver.obj"
+	@echo "... drivers/timer/pit_driver.i"
+	@echo "... drivers/timer/pit_driver.s"
 	@echo "... init/kmain.obj"
 	@echo "... init/kmain.i"
 	@echo "... init/kmain.s"
+	@echo "... lib/new_delete.obj"
+	@echo "... lib/new_delete.i"
+	@echo "... lib/new_delete.s"
 .PHONY : help
 
 

@@ -5,13 +5,13 @@
 # compile CXX with /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++
 ASM_DEFINES = 
 
-ASM_INCLUDES = -I/home/forbiddentypev/Dev/OS/Amux/include
+ASM_INCLUDES = -I/home/forbiddentypev/Dev/OS/Amux/include -I/home/forbiddentypev/Dev/OS/Amux/kernel/core -I/home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64
 
 ASM_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/forbiddentypev/Dev/OS/Amux/include
+CXX_INCLUDES = -I/home/forbiddentypev/Dev/OS/Amux/include -I/home/forbiddentypev/Dev/OS/Amux/kernel/core -I/home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64
 
 CXX_FLAGS = -ffreestanding -fno-exceptions -fno-rtti -mno-red-zone -Wall -Wextra -O2
 

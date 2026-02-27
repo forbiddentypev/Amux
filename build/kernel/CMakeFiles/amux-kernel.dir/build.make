@@ -112,11 +112,130 @@ kernel/CMakeFiles/amux-kernel.dir/init/kmain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/init/kmain.cpp.s"
 	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/init/kmain.cpp -o CMakeFiles/amux-kernel.dir/init/kmain.cpp.s
 
+kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/core/memory/physical.cpp
+kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj -MF CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj.d -o CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/core/memory/physical.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/core/memory/physical.cpp > CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/core/memory/physical.cpp -o CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.s
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/paging/paging.cpp
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj -MF CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj.d -o CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/paging/paging.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/paging/paging.cpp > CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/paging/paging.cpp -o CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.s
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/entry.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM object kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-as $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/entry.S
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-as $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/entry.S > CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.i
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-as $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/entry.S -o CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.s
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/interrupts.cpp
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj -MF CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj.d -o CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/interrupts.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/interrupts.cpp > CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/interrupts.cpp -o CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.s
+
+kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/core/scheduler/scheduler.cpp
+kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj -MF CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj.d -o CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/core/scheduler/scheduler.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/core/scheduler/scheduler.cpp > CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/core/scheduler/scheduler.cpp -o CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.s
+
+kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/driver_manager.cpp
+kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj -MF CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj.d -o CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/driver_manager.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/driver_manager.cpp > CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/driver_manager.cpp -o CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.s
+
+kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/timer/pit_driver.cpp
+kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj -MF CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj.d -o CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/timer/pit_driver.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/timer/pit_driver.cpp > CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/drivers/timer/pit_driver.cpp -o CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.s
+
+kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/flags.make
+kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj: /home/forbiddentypev/Dev/OS/Amux/kernel/lib/new_delete.cpp
+kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj: kernel/CMakeFiles/amux-kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj -MF CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj.d -o CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj -c /home/forbiddentypev/Dev/OS/Amux/kernel/lib/new_delete.cpp
+
+kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.i"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forbiddentypev/Dev/OS/Amux/kernel/lib/new_delete.cpp > CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.i
+
+kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.s"
+	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && /home/forbiddentypev/opt/cross/bin/x86_64-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forbiddentypev/Dev/OS/Amux/kernel/lib/new_delete.cpp -o CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.s
+
 # Object files for target amux-kernel
 amux__kernel_OBJECTS = \
 "CMakeFiles/amux-kernel.dir/arch/x86_64/boot/multiboot.S.obj" \
 "CMakeFiles/amux-kernel.dir/arch/x86_64/boot/entry.S.obj" \
-"CMakeFiles/amux-kernel.dir/init/kmain.cpp.obj"
+"CMakeFiles/amux-kernel.dir/init/kmain.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj" \
+"CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj" \
+"CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj"
 
 # External object files for target amux-kernel
 amux__kernel_EXTERNAL_OBJECTS =
@@ -124,9 +243,17 @@ amux__kernel_EXTERNAL_OBJECTS =
 kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/boot/multiboot.S.obj
 kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/boot/entry.S.obj
 kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/init/kmain.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/core/memory/physical.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/paging/paging.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/interrupts.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/core/scheduler/scheduler.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/drivers/driver_manager.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/drivers/timer/pit_driver.cpp.obj
+kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/lib/new_delete.cpp.obj
 kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/build.make
 kernel/amux-kernel: kernel/CMakeFiles/amux-kernel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable amux-kernel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable amux-kernel"
 	cd /home/forbiddentypev/Dev/OS/Amux/build/kernel && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/amux-kernel.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

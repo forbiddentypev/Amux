@@ -5,3 +5,5 @@ kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/boot/entry.S.obj: \
  /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/boot/entry.S
 kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/boot/multiboot.S.obj: \
  /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/boot/multiboot.S
+kernel/CMakeFiles/amux-kernel.dir/arch/x86_64/interrupts/entry.S.obj: \
+ /home/forbiddentypev/Dev/OS/Amux/kernel/arch/x86_64/interrupts/entry.S
