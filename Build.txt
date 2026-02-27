@@ -1,0 +1,120 @@
+================================================================================
+                         AMUX OS - BUILD INSTRUCTIONS
+================================================================================
+
+PREREQUISITES
+=============
+- x86_64-elf-gcc (cross compiler)
+- x86_64-elf-g++ (cross compiler)
+- x86_64-elf-as (cross assembler)
+- cmake (3.15+)
+- make
+- grub2-mkrescue (GRUB ISO creation)
+- xorriso (ISO creation)
+- qemu-system-x86_64 (optional, for testing)
+
+On Fedora:
+  sudo dnf install gcc-c++ cmake make grub2-tools xorriso qemu-system-x86
+
+For cross compiler, visit: https://osdev.org/GCC_Cross-Compiler
+
+
+BUILD STEPS
+===========
+
+1. Clone or navigate to the Amux project directory:
+   cd /path/to/Amux
+
+2. Create a build directory:
+   mkdir -p build
+   cd build
+
+3. Configure the project using the x86_64-elf toolchain:
+   cmake -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchain-x86_64-elf.cmake ..
+
+4. Build the kernel:
+   make -j$(nproc)
+
+5. Create a bootable GRUB ISO image:
+   make iso
+
+   This produces: build/amux.iso
+
+
+RUNNING IN QEMU
+===============
+
+To boot the kernel in QEMU:
+
+  qemu-system-x86_64 -cdrom amux.iso -m 512M -no-reboot
+
+Optional flags:
+  -nographic       : Run without GUI (headless)
+  -serial stdio    : Redirect serial output to console
+  -monitor none    : Disable QEMU monitor
+  -display gtk     : Force GTK display (if available)
+
+Example (headless with 512MB RAM):
+  qemu-system-x86_64 -cdrom amux.iso -m 512M -nographic -no-reboot
+
+
+QUICK BUILD & RUN (ONE COMMAND)
+================================
+
+cd /path/to/Amux && \
+mkdir -p build && cd build && \
+cmake -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchain-x86_64-elf.cmake .. && \
+make -j$(nproc) && \
+make iso && \
+qemu-system-x86_64 -cdrom amux.iso -m 512M -no-reboot
+
+
+EXPECTED OUTPUT
+===============
+
+Upon successful boot:
+- GRUB bootloader menu appears
+- Amux kernel loads via Multiboot2
+- VGA text shows "ABo" (assembly entry + kernel execution marker)
+- Kernel enters infinite halt loop
+
+
+TROUBLESHOOTING
+===============
+
+Q: "grub2-mkrescue: command not found"
+A: Install grub2-tools: sudo dnf install grub2-tools xorriso
+
+Q: "x86_64-elf-gcc: command not found"
+A: Install the cross compiler (see Prerequisites) or update PATH
+
+Q: QEMU doesn't show output
+A: Output is written to VGA (0xB8000). For serial output, modify kmain.cpp
+   to use serial port initialization and test with: -serial stdio
+
+Q: Build fails with linker errors
+A: Ensure you have the correct cross toolchain version and CMAKE_TOOLCHAIN_FILE
+   is properly specified during cmake configuration.
+
+
+BUILD STRUCTURE
+===============
+
+Source layout:
+  kernel/
+    arch/x86_64/boot/    - Assembly entry stubs and multiboot header
+    init/                - Kernel main (kmain.cpp)
+    core/                - Scheduler, memory, process management
+    drivers/             - Device drivers
+    fs/                  - Filesystem (VFS, ext2, tmpfs)
+    network/             - Network stack (TCP, UDP)
+    lib/                 - String, containers, math utilities
+    include/             - Kernel headers
+
+Output:
+  build/
+    kernel/amux-kernel   - ELF executable
+    amux.iso             - Bootable GRUB ISO image
+    iso/                 - Temporary ISO staging directory
+
+================================================================================
