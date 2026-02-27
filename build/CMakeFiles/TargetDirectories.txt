@@ -1,0 +1,6 @@
+/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles/edit_cache.dir
+/home/forbiddentypev/Dev/OS/Amux/build/CMakeFiles/rebuild_cache.dir
+/home/forbiddentypev/Dev/OS/Amux/build/kernel/CMakeFiles/amux-kernel.dir
+/home/forbiddentypev/Dev/OS/Amux/build/kernel/CMakeFiles/iso.dir
+/home/forbiddentypev/Dev/OS/Amux/build/kernel/CMakeFiles/edit_cache.dir
+/home/forbiddentypev/Dev/OS/Amux/build/kernel/CMakeFiles/rebuild_cache.dir

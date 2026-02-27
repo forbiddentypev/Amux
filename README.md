@@ -71,7 +71,7 @@ Amux/
 │   │   └── containers/        # C++ (containers, vectors, lists)
 │   │
 │   ├── include/
-│   │   ├── pan/               # C/C++ headers
+│   │   ├── Amux/               # C/C++ headers
 │   │   └── arch/              # C/C++ headers
 │   │
 │   └── init/
